@@ -739,6 +739,9 @@
     },
     "/contacts/:contactId/addresses": {
       "post": {
+        "tags": [
+          "Address"
+        ],
         "description": "create address",
         "parameters": [
           {
@@ -841,6 +844,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Address"
+        ],
         "description": "get list addresses",
         "parameters": [
           {
@@ -919,6 +925,9 @@
     },
     "/contacts/:contactId/addresses/:addressId": {
       "put": {
+        "tags": [
+          "Address"
+        ],
         "description": "update",
         "parameters": [
           {
@@ -1029,6 +1038,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Address"
+        ],
         "description": "get address by id",
         "parameters": [
           {
@@ -1110,6 +1122,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Address"
+        ],
         "description": "delete address by id",
         "parameters": [
           {
