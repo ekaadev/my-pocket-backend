@@ -448,22 +448,6 @@
             "schema": {
               "type": "string"
             }
-          },
-          {
-            "in": "query",
-            "name": "page",
-            "schema": {
-              "type": "number",
-              "default": 1
-            }
-          },
-          {
-            "in": "query",
-            "name": "size",
-            "schema": {
-              "type": "number",
-              "default": 10
-            }
           }
         ],
         "responses": {
@@ -494,20 +478,6 @@
                           "phone": {
                             "type": "string"
                           }
-                        }
-                      }
-                    },
-                    "paging": {
-                      "type": "object",
-                      "properties": {
-                        "page": {
-                          "type": "number"
-                        },
-                        "total_page": {
-                          "type": "number"
-                        },
-                        "total_item": {
-                          "type": "number"
                         }
                       }
                     }
@@ -541,6 +511,14 @@
         ],
         "description": "update contact",
         "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
           {
             "name": "contactId",
             "in": "path",

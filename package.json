@@ -1,9 +1,9 @@
 {
   "name": "belajar-rest-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/main.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest -i"
   },
   "jest": {
     "transform": {
@@ -16,6 +16,7 @@
   "description": "",
   "type": "module",
   "dependencies": {
+    "@prisma/client": "^5.19.1",
     "bcrypt": "^5.1.1",
     "express": "^4.21.0",
     "joi": "^17.13.3",
